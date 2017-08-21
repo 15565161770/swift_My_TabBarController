@@ -1,27 +1,21 @@
 //
-//  MiddleVC.swift
-//  UITabBarController
+//  OtherController.swift
+//  TabBar
 //
-//  Created by 仝兴伟 on 2017/8/14.
+//  Created by 仝兴伟 on 2017/8/21.
 //  Copyright © 2017年 仝兴伟. All rights reserved.
 //
 
 import UIKit
 
-class MiddleVC: UIViewController {
+class OtherController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 self.view.backgroundColor = UIColor.white
         // Do any additional setup after loading the view.
-        
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "navigationbar_back", target: self, action: #selector(close))
     }
 
-    func close()  {
-        self.dismiss(animated: true, completion: nil)
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -61,7 +61,7 @@ extension MyTabBarController {
         // 设置图标
         childVC.tabBarItem.image = UIImage.init(named: imageName)
         childVC.tabBarItem.selectedImage = UIImage.init(named: imageName + "_selected")
-    let nav = UINavigationController.init(rootViewController: childVC)
+        let nav = MyNavigationController.init(rootViewController: childVC)
         self.addChildViewController(nav)
         
     }

@@ -10,6 +10,9 @@
 		1807D7061F430B810008BF03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807D7041F430B810008BF03 /* Main.storyboard */; };
 		1807D7081F430B810008BF03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1807D7071F430B810008BF03 /* Assets.xcassets */; };
 		1807D70B1F430B810008BF03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1807D7091F430B810008BF03 /* LaunchScreen.storyboard */; };
+		1825A0361F4AB9B10045D36D /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825A0351F4AB9B10045D36D /* MyNavigationController.swift */; };
+		1825A0391F4AD34D0045D36D /* UIBarButtonItem+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825A0381F4AD34D0045D36D /* UIBarButtonItem+extension.swift */; };
+		1825A03B1F4AD7F20045D36D /* OtherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825A03A1F4AD7F20045D36D /* OtherController.swift */; };
 		184A32931F49B54D00B32EDC /* FourVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A328E1F49B54D00B32EDC /* FourVC.swift */; };
 		184A32941F49B54D00B32EDC /* MiddleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A328F1F49B54D00B32EDC /* MiddleVC.swift */; };
 		184A32951F49B54D00B32EDC /* OneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A32901F49B54D00B32EDC /* OneVC.swift */; };
@@ -28,6 +31,9 @@
 		1807D7071F430B810008BF03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1807D70A1F430B810008BF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1807D70C1F430B810008BF03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1825A0351F4AB9B10045D36D /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
+		1825A0381F4AD34D0045D36D /* UIBarButtonItem+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+extension.swift"; sourceTree = "<group>"; };
+		1825A03A1F4AD7F20045D36D /* OtherController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherController.swift; sourceTree = "<group>"; };
 		184A328E1F49B54D00B32EDC /* FourVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourVC.swift; sourceTree = "<group>"; };
 		184A328F1F49B54D00B32EDC /* MiddleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddleVC.swift; sourceTree = "<group>"; };
 		184A32901F49B54D00B32EDC /* OneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneVC.swift; sourceTree = "<group>"; };
@@ -70,6 +76,8 @@
 		1807D6FF1F430B810008BF03 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				1825A0371F4AD2FA0045D36D /* Category */,
+				1825A0341F4AB9690045D36D /* NavigationController */,
 				184A32A01F49B64F00B32EDC /* TabBarController */,
 				184A32981F49B57700B32EDC /* Mian */,
 				184A328D1F49B50100B32EDC /* Controllers */,
@@ -81,14 +89,31 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		1825A0341F4AB9690045D36D /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				1825A0351F4AB9B10045D36D /* MyNavigationController.swift */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		1825A0371F4AD2FA0045D36D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				1825A0381F4AD34D0045D36D /* UIBarButtonItem+extension.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		184A328D1F49B50100B32EDC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				184A328E1F49B54D00B32EDC /* FourVC.swift */,
-				184A328F1F49B54D00B32EDC /* MiddleVC.swift */,
 				184A32901F49B54D00B32EDC /* OneVC.swift */,
 				184A32911F49B54D00B32EDC /* TowVC.swift */,
 				184A32921F49B54D00B32EDC /* TreeVC.swift */,
+				184A328E1F49B54D00B32EDC /* FourVC.swift */,
+				184A328F1F49B54D00B32EDC /* MiddleVC.swift */,
+				1825A03A1F4AD7F20045D36D /* OtherController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -193,11 +218,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1825A0361F4AB9B10045D36D /* MyNavigationController.swift in Sources */,
 				184A329F1F49B5DC00B32EDC /* ViewController.swift in Sources */,
 				184A329A1F49B57700B32EDC /* AppDelegate.swift in Sources */,
 				184A32931F49B54D00B32EDC /* FourVC.swift in Sources */,
 				184A329D1F49B59900B32EDC /* UIViewExtension.swift in Sources */,
 				184A32951F49B54D00B32EDC /* OneVC.swift in Sources */,
+				1825A0391F4AD34D0045D36D /* UIBarButtonItem+extension.swift in Sources */,
+				1825A03B1F4AD7F20045D36D /* OtherController.swift in Sources */,
 				184A32A41F49B64F00B32EDC /* MyTabBarController.swift in Sources */,
 				184A32971F49B54D00B32EDC /* TreeVC.swift in Sources */,
 				184A32941F49B54D00B32EDC /* MiddleVC.swift in Sources */,
